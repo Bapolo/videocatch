@@ -1,6 +1,6 @@
 {
   "proxy": "http://localhost:5000",
-  "homepage": "https://github.com/Bapolo/videocatch/frontend",
+  "homepage": "https://github.com/Bapolo/videocatch",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
