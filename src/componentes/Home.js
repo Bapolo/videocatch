@@ -20,7 +20,7 @@ function Home({ setVideoData})
         try
         {
             setCarregandoVideo(true)
-            const response = await axios.post("http://localhost:5000/download", {url})
+            const response = await axios.post("https://videocatch-backend-production.up.railway.app/download", { url });
             console.table(response.data)
             setVideoData(response.data)
             setCarregandoVideo(false)
