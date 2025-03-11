@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:5000",
+  "proxy": "https://videocatch-backend-production.up.railway.app/",
   "homepage": "https://github.com/videocatch",
   "name": "frontend",
   "version": "0.1.0",
@@ -40,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
