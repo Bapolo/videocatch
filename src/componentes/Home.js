@@ -35,8 +35,8 @@ function Home({ setVideoData})
         <div>
             <h1>Baixar Video</h1>
 
-                {(!estadoUrl) ? <Erro texto = "Cole o texto aqui!" /> : null}
-                {(erros) ? <Erro texto = "Erro ao processar o video!" /> : null}
+                {(!estadoUrl) ? <Erro texto = "Cole o texto aqui!" /> : ""}
+                {(erros) ? <Erro texto = "Erro ao processar o video!" /> : ""}
 
                 <select value = {plataform} onChange = { (e) => setPlataform(e.target.value)}>
                     <option value = "youtube">Youtube</option>
