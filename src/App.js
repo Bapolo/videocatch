@@ -1,14 +1,17 @@
-import Home from './componentes/Home.js'
-import VideoOptions from './componentes/VideoOptions.js';
-import { useState } from 'react'
+import React, { useState, Suspense } from 'react'
 import './App.css';
+
+const Home = React.lazy(() => import("./componentes/Home.js"))
+const VideoOptions = React.lazy(() => import("./componentes/VideoOptions.js"))
 
 function App() {
   const [videoData, setVideoData] = useState(null)
   return (
     <div className="App">
-      <Home setVideoData={setVideoData} />
-      <VideoOptions videoData={videoData} />
+      <Suspense fallback={<div>Carregando...</div>}>
+        <Home setVideoData={setVideoData} />
+        <VideoOptions videoData={videoData} />
+      </Suspense>
     </div>
   );
 }
